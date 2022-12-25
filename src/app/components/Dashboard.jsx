@@ -14,7 +14,7 @@ export const Dashboard = ({groups})=>(
             // Test
 
             groups.map(group=>(
-                <ConnectedTaskList id={group.id} name={group.name}/>
+                <ConnectedTaskList key={group.id} id={group.id} name={group.name}/>
             ))
         }
     </div>
